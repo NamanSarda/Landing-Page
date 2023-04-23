@@ -1,79 +1,57 @@
-/* Google Fonts - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #efefef;
-}
-.container {
-  max-width: 1120px;
-  width: 100%;
-  padding: 40px 0;
-}
-.slide-container {
-  margin: 0 30px;
-  overflow: hidden;
-}
-.card {
-  background: #fff;
-  border-radius: 8px;
-}
-.card .image-box {
-  height: 200px;
-}
-.card .image-box img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px 8px 0 0;
-}
-.card .profile-details {
-  display: flex;
-  align-items: center;
-  column-gap: 12px;
-  padding: 15px;
-}
-.card .profile-details img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-}
-.profile-details .name {
-  font-size: 15px;
-  font-weight: 500;
-}
-.profile-details .job {
-  font-size: 12px;
-  font-weight: 500;
-  color: #4d4d4d;
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #fce0dd;
 }
 
-.swiper-navBtn {
-  color: #000;
-  height: 40px;
-  width: 40px;
-  background: #fff;
-  border-radius: 50%;
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-  font-size: 18px;
+@font-face {
+  font-family: Raleway;
+  src: url(Raleway-Regular.ttf);
 }
 
-.swiper-pagination-bullet {
-  background-color: #000;
+h1{
+    text-align: center;
+    font-family: Raleway;
+    font-weight: 500;
+    padding-top: 4.5vh;
+    font-size: 68px;
+    letter-spacing: 7px;
+    color: #BD6386;
 }
 
-@media screen and (max-width: 768px) {
-  .swiper-navBtn {
-    display: none;
-  }
+.infoBox{
+    display: inline-block;
+    width: 40%;
+    line-height: 26px;
+    padding: 20px;
+    color: #fce0dd;
+    height: 25%;
+    margin-top: 9%;
+    margin-left: 10%;
+    background-color: #BD6386;
+    border: 3px solid #BD6386;
+    letter-spacing: 2px;
+    border-radius: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bold{
+    text-decoration: none;
+    color:#fce0dd;
+    background-color: #BD6386;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.img-container{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left:65%;
+    top: 23%;
+}
+img{
+    width: 65%;
+    border-radius: 5px;
+    filter: contrast(300%),brightness(200%);
 }
